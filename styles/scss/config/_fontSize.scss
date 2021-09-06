@@ -1,0 +1,169 @@
+
+
+
+//190 160 120 100 90 40 36 28 24 22 20 18 16 15 14 12
+.font-190{
+  @include fz(190px);
+}
+.font-160{
+  @include fz(160px);
+}
+.font-120{
+  @include fz(120px);
+}
+.font-100{
+  @include fz(100px);
+}
+.font-90{
+  @include fz(90px);
+}
+.font-40 {
+  @include fz(40px);
+}
+.font-36 {
+  @include fz(36px);
+}
+.font-28 {
+  @include fz(28px);
+}
+.font-24{
+  @include fz(24px);
+}
+.font-22 {
+  @include fz(22px);
+}
+.font-20{
+  @include fz(20px);
+}
+.font-18{
+  @include fz(18px);
+}
+.font-16{
+  @include fz(16px);
+}
+.font-15{
+  @include fz(15px);
+}
+.font-14{
+  @include fz(14px);
+}
+.font-12 {
+  @include fz(12px);
+}
+@media (max-width: 1900px){
+  .font-190{
+    @include fz(160px);
+  }
+}
+
+@media (max-width: 1800px){
+  .font-190{
+    @include fz(110px);
+  }
+}
+@media (max-width: 1600px){
+  .font-100{
+    @include fz(90px);
+  }
+  .font-90{
+    @include fz(80px);
+  }
+}
+@media (max-width: 1400px){
+  .font-160{
+    @include fz(130px);
+  }
+  .font-120{
+    @include fz(90px);
+  }
+  .font-100{
+    @include fz(80px);
+  }
+  .font-90{
+    @include fz(70px);
+  }
+}
+
+@media (max-width: 1199px){
+  .font-160{
+    @include fz(110px);
+  }
+  .font-120{
+    @include fz(80px);
+  }
+  .font-100{
+    @include fz(70px);
+  }
+  .font-90{
+    @include fz(60px);
+  }
+  .font-40{
+    @include fz(35px);
+  }
+  .font-36 {
+    @include fz(30px);
+  }
+  .font-28 {
+    @include fz(22px);
+  }
+  .font-24{
+    @include fz(22px);
+  }
+  .font-20{
+    @include fz(18px);
+  }
+}
+@media (max-width: 991px){
+  .font-160{
+    @include fz(90px);
+  }
+  .font-120{
+    @include fz(70px);
+  }
+  .font-100{
+    @include fz(60px);
+  }
+  .font-90{
+    @include fz(50px);
+  }
+}
+@media (max-width: 767px){
+  .font-160{
+    @include fz(56px);
+  }
+  .font-120{
+    @include fz(56px);
+  }
+  .font-100{
+    @include fz(50px);
+  }
+  .font-90{
+    @include fz(40px);
+  }
+  .font-40 {
+    @include fz(24px);
+  }
+  .font-36 {
+    @include fz(24px);
+  }
+  .font-24 {
+    @include fz(20px);
+  }
+  .font-22 {
+    @include fz(20px);
+  }
+  .font-20 {
+    @include fz(16px);
+  }
+  .font-15 {
+    @include fz(13px);
+  }
+}
+@media (max-width: 575px){
+  .font-90{
+    @include fz(35px);
+  }
+  .font-18{
+    @include fz(16px);
+  }
+}
