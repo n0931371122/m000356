@@ -14,9 +14,11 @@
                 <h1 class="font-280 roboto font-weight-bold text-00A1E0 opacity05 lh085" data-aos="fade-up">404</h1>
                 <p class="font-50 font-weight-bold mb-2" data-aos="fade-up" data-aos-delay="50">找不到頁面</p>
                 <p class="font-24" data-aos="fade-up" data-aos-delay="100">很抱歉！您所找的頁面不存在或輸入錯誤的網址。</p>
-                <a class="flex-center font-18 bg-00A1E0 text-white w230 h70 rounded-50 mx-auto mt-5 mb-4" href="./" data-aos="fade-up" data-aos-delay="150">
-                    <span>返回首頁</span>
-                </a>
+                <div data-aos="fade-up" data-aos-delay="150">
+                    <a class="flex-center font-18 bg-00A1E0 bg-hover-0FBBFF text-white w230 h70 rounded-50 mx-auto mt-5 mb-4" href="./">
+                        <span>返回首頁</span>
+                    </a>
+                </div>
             </div>
             <div class="bg position-absolute max960 w-100">
                 <img src="styles/images/404/bg.png" alt="生豐電力" data-aos="fade-up" data-aos-delay="200">
