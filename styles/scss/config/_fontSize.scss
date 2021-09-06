@@ -2,6 +2,9 @@
 
 
 //190 160 120 100 90 40 36 28 24 22 20 18 16 15 14 12
+.font-280{
+  @include fz(280px);
+}  
 .font-190{
   @include fz(190px);
 }
@@ -16,6 +19,9 @@
 }
 .font-90{
   @include fz(90px);
+}
+.font-50{
+  @include fz(50px);
 }
 .font-40 {
   @include fz(40px);
@@ -85,6 +91,9 @@
 }
 
 @media (max-width: 1199px){
+  .font-280{
+    @include fz(200px);
+  }  
   .font-160{
     @include fz(110px);
   }
@@ -96,6 +105,9 @@
   }
   .font-90{
     @include fz(60px);
+  }
+  .font-50{
+    @include fz(40px);
   }
   .font-40{
     @include fz(35px);
@@ -128,6 +140,9 @@
   }
 }
 @media (max-width: 767px){
+  .font-280{
+    @include fz(100px);
+  }  
   .font-160{
     @include fz(56px);
   }
@@ -139,6 +154,9 @@
   }
   .font-90{
     @include fz(40px);
+  }
+  .font-50 {
+    @include fz(30px);
   }
   .font-40 {
     @include fz(24px);
