@@ -66,9 +66,7 @@
                                                 </p>
                                                 <span class="d-block font-28 font-weight-500 text-00A1E0 position-relative les2 mb-3 mb-xl-4 pb-xl-1">太陽能光電案場資訊</span>
                                                 <p class="les1 lh165 mb-0">
-                                                    <span class="d-md-block">發展永續再生能源、實現綠色家園從在地做起，</span>
-                                                    <span class="d-md-block">盡一份力，讓下一代安心，太陽能光電小知識，</span>
-                                                    <span class="d-md-block">你該知道的幾件事！</span>
+                                                    發展永續再生能源、實現綠色家園從在地做起，盡一份力，讓下一代安心，太陽能光電小知識，你該知道的幾件事！
                                                 </p>
                                             </div>
                                         </div>
