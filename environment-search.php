@@ -11,7 +11,7 @@
         <?php include "header.php"; ?>
         <!-- main ======================================================================================= -->
         <main class="main">
-            <div class="editor templete" id="environmentEditor">
+            <div class="templete">
                 <div class="banner-section pt-2 pl-4">
                     <div class="max1701 ml-auto">
                         <div class="max1500 d-block d-lg-flex flex-justify-space-between flex-align-end mb-4 mb-lg-5 mr-4">

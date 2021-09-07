@@ -1182,27 +1182,27 @@ input[type=number] {
   display: none;
 }
 
-.editor.templete {
+.templete {
   padding-top: 148px;
 }
-.editor.templete .section {
+.templete .section {
   padding-top: 223px;
   margin-top: -176px;
 }
 @media (max-width: 1199px) {
-  .editor.templete .section {
+  .templete .section {
     margin-top: -140px;
     padding-top: 170px;
   }
 }
 @media (max-width: 991px) {
-  .editor.templete .section {
+  .templete .section {
     margin-top: -120px;
     padding-top: 148px;
   }
 }
 @media (max-width: 767px) {
-  .editor.templete {
+  .templete {
     padding-top: 85px;
   }
 }
@@ -1272,7 +1272,7 @@ input[type=number] {
   display: block;
 }
 
-.section.templete::before {
+.section.section-templete::before {
   content: "";
   display: block;
   height: 103px;
@@ -1283,23 +1283,23 @@ input[type=number] {
   left: 0;
   border-radius: 0 80px 0 0;
 }
-.section.templete > div {
+.section.section-templete > div {
   top: -25px;
 }
 @media (max-width: 1600px) {
-  .section.templete {
+  .section.section-templete {
     padding-top: 50px;
     padding-bottom: 36px;
   }
-  .section.templete::before {
+  .section.section-templete::before {
     display: none;
   }
-  .section.templete > div {
+  .section.section-templete > div {
     top: 0;
   }
 }
 @media (max-width: 575px) {
-  .section.templete {
+  .section.section-templete {
     padding-top: 30px;
   }
 }
@@ -2184,7 +2184,7 @@ header .menu li .menuItem .toggle i {
   transition: all 0.3s;
 }
 header .menu li .dropdownMenu {
-  border-radius: 5px;
+  border-radius: 0 0 5px 5px;
   background: white;
   text-align: center;
   width: 150px;

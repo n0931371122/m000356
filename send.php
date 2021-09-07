@@ -11,7 +11,7 @@
         <?php include "header.php"; ?>
         <!-- main ======================================================================================= -->
         <main class="main">
-            <div class="editor templete" id="sendEditor">
+            <div class="templete">
                 <div class="banner-section pt-2 pl-4">
                     <div class="max1701 ml-auto">
                         <div class="max1500 d-block d-lg-flex flex-justify-space-between flex-align-end mb-4 mb-lg-5 mr-4">
@@ -26,7 +26,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="section templete bg-F7F7F7 px-4 pb-5">
+                <div class="section section-templete bg-F7F7F7 px-4 pb-5">
                     <div class="pt-xl-4 pb-md-5 mb-xl-5 mt-4 mt-md-5 mt-xl-0">
                         <div class="max680 position-relative z-1 mx-auto mb-2">
                             <div class="block bg-white rounded-30 text-center p-4 p-md-5 mt-xl-5" data-aos="fade-up">

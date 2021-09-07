@@ -26,7 +26,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="section templete bg-F7F7F7 px-4 pb-5">
+                <div class="section section-templete bg-F7F7F7 px-4 pb-5">
                     <div class="pb-md-4 pt-xl-4">
                         <div class="max1200 mx-auto pt-lg-4 pb-4 pb-md-5 mb-lg-4">
                             <div class="row g-0 OpenSans text-center pb-2">

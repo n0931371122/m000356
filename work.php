@@ -20,27 +20,27 @@
         <?php include "header.php"; ?>
         <!-- main ======================================================================================= -->
         <main class="main">
-            <div class="editor" id="workEditor">
-                <div class="banner-section style-2">
-                    <div class="position-fixed w-100">
-                        <div class="jqimgFill">
-                            <img src="styles/images/work/banner.jpg" alt="">
-                        </div>
+            <div class="banner-section style-2">
+                <div class="position-fixed w-100">
+                    <div class="jqimgFill">
+                        <img src="styles/images/work/banner.jpg" alt="">
                     </div>
                 </div>
-                <div class="section templete bg-white lh165 position-relative">
-                    <div class="position-relative px-4">
-                        <div class="max1302 mx-auto pb-md-3 pb-lg-5 mb-xl-4">
-                            <div class="mb-3 mb-xl-4" data-aos="fade-up">
-                                <span class="tag d-inline-block font-20 font-weight-500 text-white bg-AED47F border-AED47F rounded-50 les1 lh165 py-md-2 px-2 px-md-4 mr-1">
-                                    <span class="mx-1">案場資訊</span>
-                                </span>
-                                <span class="tag d-inline-block font-20 font-weight-500 text-AED47F bg-white border-AED47F rounded-50 les1 lh165 py-md-2 px-2 px-md-4 mx-1">
-                                    <span class="mx-1">次分類3</span>
-                                </span>
-                                <span class="font-24 font-weight-bold text-9CC1C1 ml-2"> 2021.06.20</span>
-                            </div>
-                            <h1 class="font-40 font-weight-bold les2" data-aos="fade-up">綠色能源成為社區助力，環境友善工法，永續在地深耕，植生復育綠意萌芽保護計畫正式啟動 水保植生復育防沖蝕</h1>
+            </div>
+            <div class="section section-templete bg-white lh165 position-relative">
+                <div class="position-relative px-4">
+                    <div class="max1302 mx-auto pb-md-3 pb-lg-5 mb-xl-4">
+                        <div class="mb-3 mb-xl-4" data-aos="fade-up">
+                            <span class="tag d-inline-block font-20 font-weight-500 text-white bg-AED47F border-AED47F rounded-50 les1 lh165 py-md-2 px-2 px-md-4 mr-1">
+                                <span class="mx-1">案場資訊</span>
+                            </span>
+                            <span class="tag d-inline-block font-20 font-weight-500 text-AED47F bg-white border-AED47F rounded-50 les1 lh165 py-md-2 px-2 px-md-4 mx-1">
+                                <span class="mx-1">次分類3</span>
+                            </span>
+                            <span class="font-24 font-weight-bold text-9CC1C1 ml-2"> 2021.06.20</span>
+                        </div>
+                        <h1 class="font-40 font-weight-bold les2" data-aos="fade-up">綠色能源成為社區助力，環境友善工法，永續在地深耕，植生復育綠意萌芽保護計畫正式啟動 水保植生復育防沖蝕</h1>
+                        <div class="editor" id="workEditor">
                             <figure class="d-table mx-auto my-md-3 my-xl-5 py-3" data-aos="fade-up">
                                 <img class="mb-3" src="styles/images/work/1.jpg" alt="">
                                 <figcaption class="text-707070">圖一：近年面臨極端氣候之威脅及能源耗竭之挑戰積極發展，應用成為帶動產業發展的主要動力 (此為照片備註文字)</figcaption>
@@ -100,46 +100,46 @@
                                 <p data-aos="fade-up">近年面臨極端氣候之威脅及能源耗竭之挑戰，積極發展綠能並推動能源永續已屬當務之急，新能源技術應用成為帶動產業發展的主要動力，並帶動相關產業蓬勃發展，行政院亦推動能源轉型計畫政策，全力發展低碳綠能的再生能源，目標總發電量占比達20%為目標。近年面臨極端氣候之威脅及能源耗竭之挑戰，積極發展綠能並推動能源永續已屬當務之急，新能源技術應用成為帶動產業發展的主要動力，並帶動相關產業蓬勃發展，行政院亦推動能源轉型計畫政策，全力發展低碳綠能的再生能源，目標總發電量占比達20%為目標。</p>
                             </div>
                         </div>
-                        <div class="flex-center pb-md-3 pb-lg-5 mb-4 pt-3" data-aos="fade-up">
-                            <span class="mr-3">分享：</span>
-                            <ul class="noneStyle d-flex">
-                                <li class="mx-1">
-                                    <a class="flex-center bg-F2F2F2 w50 h50 rounded-circle text-A0A0A0 text-hover-white bg-hover-00A1E0" href="#" target="_blank">
-                                        <i class="icon-fb font-22"></i>
-                                    </a>
-                                </li>
-                                <li class="mx-1">
-                                    <a class="flex-center bg-F2F2F2 w50 h50 rounded-circle text-A0A0A0 text-hover-white bg-hover-00A1E0" href="#" target="_blank">
-                                        <i class="icon-twitter"></i>
-                                    </a>
-                                </li>
-                                <li class="mx-1">
-                                    <a class="flex-center bg-F2F2F2 w50 h50 rounded-circle text-A0A0A0 text-hover-white bg-hover-00A1E0" href="#" target="_blank">
-                                        <i class="icon-line font-22"></i>
-                                    </a>
-                                </li>
-                                <li class="mx-1">
-                                    <a class="flex-center bg-F2F2F2 w50 h50 rounded-circle text-A0A0A0 text-hover-white bg-hover-00A1E0" href="#" target="_blank">
-                                        <i class="icon-mail font-14"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="border-top-E5E6E5 pt-4">
-                            <div class="prev_back_next flex-justify-space-between flex-align-center text-808080 max1400 position-relative les1 mx-auto py-2 my-1" data-aos="fade-up">
-                                <a class="text-hover-00A1E0" href="work">
-                                    <i class="icon-prev"></i>
-                                    <span class="font-18 ml-2 ml-md-4">上一則</span>
+                    </div>
+                    <div class="flex-center pb-md-3 pb-lg-5 mb-4 pt-3" data-aos="fade-up">
+                        <span class="mr-3">分享：</span>
+                        <ul class="noneStyle d-flex">
+                            <li class="mx-1">
+                                <a class="flex-center bg-F2F2F2 w50 h50 rounded-circle text-A0A0A0 text-hover-white bg-hover-00A1E0" href="#" target="_blank">
+                                    <i class="icon-fb font-22"></i>
                                 </a>
-                                <a class="flex-center text-hover-00A1E0" href="works">
-                                    <i class="icon-block font-24"></i>
-                                    <span class="font-18 lh1 ml-2 pl-1">回列表</span>
+                            </li>
+                            <li class="mx-1">
+                                <a class="flex-center bg-F2F2F2 w50 h50 rounded-circle text-A0A0A0 text-hover-white bg-hover-00A1E0" href="#" target="_blank">
+                                    <i class="icon-twitter"></i>
                                 </a>
-                                <a class="text-hover-00A1E0" href="work">
-                                    <span class="font-18 mr-2 mr-md-4">下一則</span>
-                                    <i class="icon-next"></i>
+                            </li>
+                            <li class="mx-1">
+                                <a class="flex-center bg-F2F2F2 w50 h50 rounded-circle text-A0A0A0 text-hover-white bg-hover-00A1E0" href="#" target="_blank">
+                                    <i class="icon-line font-22"></i>
                                 </a>
-                            </div>
+                            </li>
+                            <li class="mx-1">
+                                <a class="flex-center bg-F2F2F2 w50 h50 rounded-circle text-A0A0A0 text-hover-white bg-hover-00A1E0" href="#" target="_blank">
+                                    <i class="icon-mail font-14"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="border-top-E5E6E5 pt-4">
+                        <div class="prev_back_next flex-justify-space-between flex-align-center text-808080 max1400 position-relative les1 mx-auto py-2 my-1" data-aos="fade-up">
+                            <a class="text-hover-00A1E0" href="work">
+                                <i class="icon-prev"></i>
+                                <span class="font-18 ml-2 ml-md-4">上一則</span>
+                            </a>
+                            <a class="flex-center text-hover-00A1E0" href="works">
+                                <i class="icon-block font-24"></i>
+                                <span class="font-18 lh1 ml-2 pl-1">回列表</span>
+                            </a>
+                            <a class="text-hover-00A1E0" href="work">
+                                <span class="font-18 mr-2 mr-md-4">下一則</span>
+                                <i class="icon-next"></i>
+                            </a>
                         </div>
                     </div>
                 </div>

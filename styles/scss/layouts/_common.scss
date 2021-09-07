@@ -1,4 +1,4 @@
-.editor.templete{
+.templete{
 	padding-top: 148px;
     .section{
         padding-top: 223px;
@@ -89,7 +89,7 @@
         }
     }
 }
-.section.templete{
+.section.section-templete{
     &::before{
         content:"";
         display: block;
