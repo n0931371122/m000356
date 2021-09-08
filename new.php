@@ -127,7 +127,7 @@
                                 <i class="icon-prev"></i>
                                 <span class="font-18 ml-2 ml-md-4">上一則</span>
                             </a>
-                            <a class="flex-center text-hover-00A1E0" href="news">
+                            <a class="absolute-center flex-center text-hover-00A1E0" href="news">
                                 <i class="icon-block font-24"></i>
                                 <span class="font-18 lh1 ml-2 pl-1">回列表</span>
                             </a>
