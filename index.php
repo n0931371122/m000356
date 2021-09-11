@@ -75,16 +75,9 @@
                         <div class="row g-0 pt-4 pt-md-5 mt-2 mt-md-0 mt-xl-5">
                             <div class="col-auto d-none d-lg-flex font-weight-500 les1 pr-xxl-5 mr-4 pt-5 mt-5">
                                 <div class="mt-5 pt-3" data-aos="fade-up">
-                                    <!---點擊ajax下面資料-->
                                     <ul class="noneStyle font-18 pt-5">
-                                        <li class="mb-4 active">
-                                            <div class="d-table rounded-30 cursor" onClick="ajaxWorksSwiper()">全部類型</div>
-                                        </li>
-                                        <li class="mb-4">
-                                            <div class="d-table rounded-30 cursor" onClick="ajaxWorksSwiper()">專案介紹</div>
-                                        </li>
-                                        <li class="mb-4">
-                                            <div class="d-table rounded-30 cursor" onClick="ajaxWorksSwiper()">案場資訊</div>
+                                        <li v-for="(item,index) in indexWorkData.categoryList" :class="[indexWorkData.selectedCategoryId==index?'active':'' , indexWorkData.categoryList.length-1==index?'d-none':'' , 'mb-4']" :key="index" @click="indexWorkData.selectedCategoryId=index">
+                                            <div class="d-table rounded-30 cursor">{{item.name}}</div>
                                         </li>
                                     </ul>
                                 </div>
@@ -102,17 +95,8 @@
                                                 </p>
                                                 <div class="d-block d-lg-none overflow-x-auto pb-2" data-aos="fade-up">
                                                     <ul class="noneStyle d-flex les1">
-                                                        <li class="flex-shrink-0 mx-1 active">
-                                                            <div class="rounded-50 cursor" onClick="ajaxWorksSwiper()">全部類型</div>
-                                                        </li>
-                                                        <li class="flex-shrink-0 mx-1">
-                                                            <div class="rounded-50 cursor" onClick="ajaxWorksSwiper()">專案介紹</div>
-                                                        </li>
-                                                        <li class="flex-shrink-0 mx-1">
-                                                            <div class="rounded-50 cursor" onClick="ajaxWorksSwiper()">案場資訊</div>
-                                                        </li>
-                                                        <li class="flex-shrink-0 mx-1">
-                                                            <div class="rounded-50 cursor" onClick="ajaxWorksSwiper()">其他分類</div>
+                                                        <li v-for="(item,index) in indexWorkData.categoryList" :class="[indexWorkData.selectedCategoryId==index?'active':'' , 'flex-shrink-0 mx-1']" :key="index" @click="indexWorkData.selectedCategoryId=index">
+                                                            <div class="rounded-50 cursor">{{item.name}}</div>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -125,182 +109,37 @@
                                             </div>
                                         </div>
                                         <div class="swiper-container mt-4 mt-md-5 pt-2 pt-md-0 pt-lg-4 pb-xl-5 mb-xl-5 pr-4 pr-md-0" data-aos="fade-up">
-                                            <div class="swiper-wrapper pb-4 mb-2 mb-lg-0">
-                                                <div class="swiper-slide">
+                                            <swiper class="pb-4 mb-2 mb-lg-0" ref="workSwiper" :options="indexWorkData.swiperOptions">
+                                                <swiper-slide v-for="(item, index) in indexWorkData.tempIndexWorkList" :key="index">
                                                     <a class="workItem d-block position-relative z-1 py-xl-3" href="work">
                                                         <span class="d-block rounded-15 overflow-hidden">
                                                             <span class="d-block position-relative">
                                                                 <span class="jqimgFill d-block">
-                                                                    <img src="styles/images/works/1.jpg" alt="">
+                                                                    <img :src="item.img" :alt="item.alt">
                                                                 </span>
                                                                 <span class="dec-circle d-none d-xl-flex position-absolute flex-center text-white rounded-circle w100 h100">
-                                                                    <img class="w20" src="styles/images/index/arrow.svg" alt="">
+                                                                    <img class="w20" src="styles/images/index/arrow.svg" alt="生豐電力">
                                                                 </span>
                                                             </span>
                                                             <span class="d-block bg-white position-relative p-3 p-md-4">
                                                                 <span class="d-block py-1 px-xl-2">
                                                                     <span class="d-block mb-3 pb-md-1">
                                                                         <span class="tag d-inline-block font-15 font-weight-500 text-white bg-AED47F border-AED47F rounded-50 les1 py-1 px-2 mr-1">
-                                                                            <span class="mx-1">案場資訊</span>
+                                                                            <span class="mx-1">{{item.category}}</span>
                                                                         </span>
                                                                         <span class="tag d-inline-block font-15 font-weight-500 text-AED47F bg-white border-AED47F rounded-50 les1 py-1 px-2 mx-md-1">
-                                                                            <span class="mx-1">次分類1</span>
+                                                                            <span class="mx-1">{{item.subCategory}}</span>
                                                                         </span>
-                                                                        <span class="font-18 font-weight-bold text-9CC1C1 ml-1 ml-md-2"> 2021.06.20</span>
+                                                                        <span class="font-18 font-weight-bold text-9CC1C1 ml-1 ml-md-2">{{item.date}}</span>
                                                                     </span>
-                                                                    <span class="title font-24 font-weight-bold lh16 les1 line2 mb-2 mb-md-3">綠色能源成為社區助力，環境友善工法，永續在地深耕</span>
-                                                                    <span class="content lh18 les1 line2 mb-2 mb-md-4">地方活動 — 綠色能源成為社區助力 深耕在地 落實企業社會責任</span>
+                                                                    <span class="title font-24 font-weight-bold lh16 les1 line2 mb-2 mb-md-3">{{item.title}}</span>
+                                                                    <span class="content lh18 les1 line2 mb-2 mb-md-4">{{item.content}}</span>
                                                                 </span>
                                                             </span>
                                                         </span>
                                                     </a>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <a class="workItem d-block position-relative z-1 py-xl-3" href="work">
-                                                        <span class="d-block rounded-15 overflow-hidden">
-                                                            <span class="d-block position-relative">
-                                                                <span class="jqimgFill d-block">
-                                                                    <img src="styles/images/works/2.jpg" alt="">
-                                                                </span>
-                                                                <span class="dec-circle d-none d-xl-flex position-absolute flex-center text-white rounded-circle w100 h100">
-                                                                    <img class="w20" src="styles/images/index/arrow.svg" alt="">
-                                                                </span>
-                                                            </span>
-                                                            <span class="d-block bg-white position-relative p-3 p-md-4">
-                                                                <span class="d-block py-1 px-xl-2">
-                                                                    <span class="d-block mb-3 pb-md-1">
-                                                                        <span class="tag d-inline-block font-15 font-weight-500 text-white bg-AED47F border-AED47F rounded-50 les1 py-1 px-2 mr-1">
-                                                                            <span class="mx-1">案場資訊</span>
-                                                                        </span>
-                                                                        <span class="tag d-inline-block font-15 font-weight-500 text-AED47F bg-white border-AED47F rounded-50 les1 py-1 px-2 mx-md-1">
-                                                                            <span class="mx-1">次分類1</span>
-                                                                        </span>
-                                                                        <span class="font-18 font-weight-bold text-9CC1C1 ml-1 ml-md-2"> 2021.06.20</span>
-                                                                    </span>
-                                                                    <span class="title font-24 font-weight-bold lh16 les1 line2 mb-2 mb-md-3">綠色能源成為社區助力，環境友善工法，永續在地深耕</span>
-                                                                    <span class="content lh18 les1 line2 mb-2 mb-md-4">地方活動 — 綠色能源成為社區助力 深耕在地 落實企業社會責任</span>
-                                                                </span>
-                                                            </span>
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <a class="workItem d-block position-relative z-1 py-xl-3" href="work">
-                                                        <span class="d-block rounded-15 overflow-hidden">
-                                                            <span class="d-block position-relative">
-                                                                <span class="jqimgFill d-block">
-                                                                    <img src="styles/images/works/3.jpg" alt="">
-                                                                </span>
-                                                                <span class="dec-circle d-none d-xl-flex position-absolute flex-center text-white rounded-circle w100 h100">
-                                                                    <img class="w20" src="styles/images/index/arrow.svg" alt="">
-                                                                </span>
-                                                            </span>
-                                                            <span class="d-block bg-white position-relative p-3 p-md-4">
-                                                                <span class="d-block py-1 px-xl-2">
-                                                                    <span class="d-block mb-3 pb-md-1">
-                                                                        <span class="tag d-inline-block font-15 font-weight-500 text-white bg-AED47F border-AED47F rounded-50 les1 py-1 px-2 mr-1">
-                                                                            <span class="mx-1">案場資訊</span>
-                                                                        </span>
-                                                                        <span class="tag d-inline-block font-15 font-weight-500 text-AED47F bg-white border-AED47F rounded-50 les1 py-1 px-2 mx-md-1">
-                                                                            <span class="mx-1">次分類1</span>
-                                                                        </span>
-                                                                        <span class="font-18 font-weight-bold text-9CC1C1 ml-1 ml-md-2"> 2021.06.20</span>
-                                                                    </span>
-                                                                    <span class="title font-24 font-weight-bold lh16 les1 line2 mb-2 mb-md-3">綠色能源成為社區助力，環境友善工法，永續在地深耕</span>
-                                                                    <span class="content lh18 les1 line2 mb-2 mb-md-4">地方活動 — 綠色能源成為社區助力 深耕在地 落實企業社會責任</span>
-                                                                </span>
-                                                            </span>
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <a class="workItem d-block position-relative z-1 py-xl-3" href="work">
-                                                        <span class="d-block rounded-15 overflow-hidden">
-                                                            <span class="d-block position-relative">
-                                                                <span class="jqimgFill d-block">
-                                                                    <img src="styles/images/works/1.jpg" alt="">
-                                                                </span>
-                                                                <span class="dec-circle d-none d-xl-flex position-absolute flex-center text-white rounded-circle w100 h100">
-                                                                    <img class="w20" src="styles/images/index/arrow.svg" alt="">
-                                                                </span>
-                                                            </span>
-                                                            <span class="d-block bg-white position-relative p-3 p-md-4">
-                                                                <span class="d-block py-1 px-xl-2">
-                                                                    <span class="d-block mb-3 pb-md-1">
-                                                                        <span class="tag d-inline-block font-15 font-weight-500 text-white bg-AED47F border-AED47F rounded-50 les1 py-1 px-2 mr-1">
-                                                                            <span class="mx-1">案場資訊</span>
-                                                                        </span>
-                                                                        <span class="tag d-inline-block font-15 font-weight-500 text-AED47F bg-white border-AED47F rounded-50 les1 py-1 px-2 mx-md-1">
-                                                                            <span class="mx-1">次分類1</span>
-                                                                        </span>
-                                                                        <span class="font-18 font-weight-bold text-9CC1C1 ml-1 ml-md-2"> 2021.06.20</span>
-                                                                    </span>
-                                                                    <span class="title font-24 font-weight-bold lh16 les1 line2 mb-2 mb-md-3">綠色能源成為社區助力，環境友善工法，永續在地深耕</span>
-                                                                    <span class="content lh18 les1 line2 mb-2 mb-md-4">地方活動 — 綠色能源成為社區助力 深耕在地 落實企業社會責任</span>
-                                                                </span>
-                                                            </span>
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <a class="workItem d-block position-relative z-1 py-xl-3" href="work">
-                                                        <span class="d-block rounded-15 overflow-hidden">
-                                                            <span class="d-block position-relative">
-                                                                <span class="jqimgFill d-block">
-                                                                    <img src="styles/images/works/2.jpg" alt="">
-                                                                </span>
-                                                                <span class="dec-circle d-none d-xl-flex position-absolute flex-center text-white rounded-circle w100 h100">
-                                                                    <img class="w20" src="styles/images/index/arrow.svg" alt="">
-                                                                </span>
-                                                            </span>
-                                                            <span class="d-block bg-white position-relative p-3 p-md-4">
-                                                                <span class="d-block py-1 px-xl-2">
-                                                                    <span class="d-block mb-3 pb-md-1">
-                                                                        <span class="tag d-inline-block font-15 font-weight-500 text-white bg-AED47F border-AED47F rounded-50 les1 py-1 px-2 mr-1">
-                                                                            <span class="mx-1">案場資訊</span>
-                                                                        </span>
-                                                                        <span class="tag d-inline-block font-15 font-weight-500 text-AED47F bg-white border-AED47F rounded-50 les1 py-1 px-2 mx-md-1">
-                                                                            <span class="mx-1">次分類1</span>
-                                                                        </span>
-                                                                        <span class="font-18 font-weight-bold text-9CC1C1 ml-1 ml-md-2"> 2021.06.20</span>
-                                                                    </span>
-                                                                    <span class="title font-24 font-weight-bold lh16 les1 line2 mb-2 mb-md-3">綠色能源成為社區助力，環境友善工法，永續在地深耕</span>
-                                                                    <span class="content lh18 les1 line2 mb-2 mb-md-4">地方活動 — 綠色能源成為社區助力 深耕在地 落實企業社會責任</span>
-                                                                </span>
-                                                            </span>
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <a class="workItem d-block position-relative z-1 py-xl-3" href="work">
-                                                        <span class="d-block rounded-15 overflow-hidden">
-                                                            <span class="d-block position-relative">
-                                                                <span class="jqimgFill d-block">
-                                                                    <img src="styles/images/works/3.jpg" alt="">
-                                                                </span>
-                                                                <span class="dec-circle d-none d-xl-flex position-absolute flex-center text-white rounded-circle w100 h100">
-                                                                    <img class="w20" src="styles/images/index/arrow.svg" alt="">
-                                                                </span>
-                                                            </span>
-                                                            <span class="d-block bg-white position-relative p-3 p-md-4">
-                                                                <span class="d-block py-1 px-xl-2">
-                                                                    <span class="d-block mb-3 pb-md-1">
-                                                                        <span class="tag d-inline-block font-15 font-weight-500 text-white bg-AED47F border-AED47F rounded-50 les1 py-1 px-2 mr-1">
-                                                                            <span class="mx-1">案場資訊</span>
-                                                                        </span>
-                                                                        <span class="tag d-inline-block font-15 font-weight-500 text-AED47F bg-white border-AED47F rounded-50 les1 py-1 px-2 mx-md-1">
-                                                                            <span class="mx-1">次分類1</span>
-                                                                        </span>
-                                                                        <span class="font-18 font-weight-bold text-9CC1C1 ml-1 ml-md-2"> 2021.06.20</span>
-                                                                    </span>
-                                                                    <span class="title font-24 font-weight-bold lh16 les1 line2 mb-2 mb-md-3">綠色能源成為社區助力，環境友善工法，永續在地深耕</span>
-                                                                    <span class="content lh18 les1 line2 mb-2 mb-md-4">地方活動 — 綠色能源成為社區助力 深耕在地 落實企業社會責任</span>
-                                                                </span>
-                                                            </span>
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                            </div>
+                                                </swiper-slide>
+                                            </swiper>
                                             <div class="d-xl-none swiper-pagination font-18 text-white mx-2"></div>
                                             <a class="d-table d-md-none font-14 bg-00A1E0 text-white rounded-50 py-2 px-5 mx-auto mt-5" href="works">
                                                 <span class="flex-align-center my-1 mx-2 px-1">
@@ -309,7 +148,7 @@
                                                 </span>
                                             </a>
                                             <div class="d-none d-xl-block bar-inner">
-                                                <div class="bar"></div>
+                                                <div class="bar" :style="{width:indexWorkData.worksBarWidth+'px',transform:'translateX('+indexWorkData.worksBarTransform+'px)'}"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -726,6 +565,108 @@
         <?php include "footer.php"; ?>
     </div>
     <?php include "footer-js.php"; ?>
+    <script src="scripts/plugins/vue-awesome-swiper.js"></script>
+    <script>
+        let indexWorkList = [{
+                categoryId: 1,
+                img: "styles/images/works/1.jpg",
+                alt: "圖片說明",
+                category: "案場資訊",
+                subCategory: "次分類1",
+                date: "2021.06.20",
+                title: "綠色能源成為社區助力，環境友善工法，永續在地深耕",
+                content: "地方活動 — 綠色能源成為社區助力 深耕在地 落實企業社會責任"
+            },
+            {
+                categoryId: 2,
+                img: "styles/images/works/2.jpg",
+                alt: "圖片說明",
+                category: "案場資訊",
+                subCategory: "次分類2",
+                date: "2021.06.20",
+                title: "綠色能源成為社區助力，環境友善工法，永續在地深耕",
+                content: "地方活動 — 綠色能源成為社區助力 深耕在地 落實企業社會責任"
+            },
+            {
+                categoryId: 1,
+                img: "styles/images/works/3.jpg",
+                alt: "圖片說明",
+                category: "案場資訊",
+                subCategory: "次分類3",
+                date: "2021.06.20",
+                title: "綠色能源成為社區助力，環境友善工法，永續在地深耕",
+                content: "地方活動 — 綠色能源成為社區助力 深耕在地 落實企業社會責任"
+            },
+            {
+                categoryId: 2,
+                img: "styles/images/works/1.jpg",
+                alt: "圖片說明",
+                category: "專案介紹",
+                subCategory: "次分類1",
+                date: "2021.06.20",
+                title: "綠色能源成為社區助力，環境友善工法，永續在地深耕",
+                content: "地方活動 — 綠色能源成為社區助力 深耕在地 落實企業社會責任"
+            },
+            {
+                categoryId: 3,
+                img: "styles/images/works/2.jpg",
+                alt: "圖片說明",
+                category: "專案介紹",
+                subCategory: "次分類2",
+                date: "2021.06.20",
+                title: "綠色能源成為社區助力，環境友善工法，永續在地深耕",
+                content: "地方活動 — 綠色能源成為社區助力 深耕在地 落實企業社會責任"
+            },
+            {
+                categoryId: 1,
+                img: "styles/images/works/3.jpg",
+                alt: "圖片說明",
+                category: "專案介紹",
+                subCategory: "次分類3",
+                date: "2021.06.20",
+                title: "綠色能源成為社區助力，環境友善工法，永續在地深耕",
+                content: "地方活動 — 綠色能源成為社區助力 深耕在地 落實企業社會責任"
+            },
+            {
+                categoryId: 1,
+                img: "styles/images/works/2.jpg",
+                alt: "圖片說明",
+                category: "專案介紹",
+                subCategory: "次分類2",
+                date: "2021.06.20",
+                title: "綠色能源成為社區助力，環境友善工法，永續在地深耕",
+                content: "地方活動 — 綠色能源成為社區助力 深耕在地 落實企業社會責任"
+            },
+            {
+                categoryId: 1,
+                img: "styles/images/works/3.jpg",
+                alt: "圖片說明",
+                category: "專案介紹",
+                subCategory: "次分類3",
+                date: "2021.06.20",
+                title: "綠色能源成為社區助力，環境友善工法，永續在地深耕",
+                content: "地方活動 — 綠色能源成為社區助力 深耕在地 落實企業社會責任"
+            },
+        ]
+        let categoryList = [{
+                id: 0,
+                name: "全部類型"
+            },
+            {
+                id: 1,
+                name: "專案介紹"
+            },
+            {
+                id: 2,
+                name: "專案介紹"
+            },
+            {
+                id: 3,
+                name: "其他分類"
+            },
+        ]
+    </script>
+    <script src="scripts/default/index.js"></script>
 </body>
 
 </html>

@@ -9,5 +9,6 @@
 <script src="scripts/plugins/greensock/gsap.min.js"></script>
 <script src="scripts/plugins/greensock/DrawSVGPlugin.min.js"></script>
 <script src="scripts/plugins/greensock/MotionPathPlugin.min.js"></script>
+<script src="scripts/plugins/vue.js"></script>
 <script src="scripts/default/function.js"></script>
 <script src="scripts/default/ui.js"></script>
