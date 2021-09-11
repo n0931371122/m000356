@@ -28,24 +28,6 @@
                 </div>
                 <div class="section bg-F7F7F7 px-4 pb-5">
                     <div class="max1500 mx-auto pb-md-5 pt-xl-4">
-                        <!-- <form class="d-block d-xl-flex flex-justify-space-between flex-align-center position-relative z-1 pb-4 pb-lg-5 mb-xl-3" action="environment-search" data-aos="fade-up">
-                            <div class="select-element style-1 mb-3 mb-lg-4 mb-xl-0">
-                                <select class="selectpicker" id="year" name="year">
-                                    <option>全部年份</option>
-                                    <option>2021</option>
-                                    <option>2020</option>
-                                    <option>2019</option>
-                                </select>
-                            </div>
-                            <div>
-                                <div class="input-element flex-align-center bg-white rounded-50">
-                                    <input class="w0 flex-grow" type="text" placeholder="Search">
-                                    <button style="flex:0 0 20px;" type="submit">
-                                        <i class="icon-search font-20 text-AEAFB6 text-hover-00A1E0"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </form> -->
                         <div class="d-block d-xl-flex flex-justify-space-between flex-align-center position-relative z-1 pb-4 pb-lg-5 mb-xl-3" data-aos="fade-up">
                             <div class="select-element style-1 mb-3 mb-lg-4 mb-xl-0">
                                 <select class="selectpicker" id="year" name="year">
