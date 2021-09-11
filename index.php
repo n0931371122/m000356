@@ -94,7 +94,7 @@
                                                     <span class="d-md-block">打造區域獨特的太陽能光電產業園區。</span>
                                                 </p>
                                                 <div class="d-block d-lg-none overflow-x-auto pb-2" data-aos="fade-up">
-                                                    <ul class="noneStyle d-flex les1">
+                                                    <ul class="noneStyle les1">
                                                         <li v-for="(item,index) in indexWorkData.categoryList" :class="[indexWorkData.selectedCategoryId==index?'active':'' , 'flex-shrink-0 mx-1']" :key="index" @click="indexWorkData.selectedCategoryId=index">
                                                             <div class="rounded-50 cursor">{{item.name}}</div>
                                                         </li>
@@ -658,7 +658,7 @@
             },
             {
                 id: 2,
-                name: "專案介紹"
+                name: "案場資訊"
             },
             {
                 id: 3,
