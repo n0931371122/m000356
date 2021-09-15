@@ -261,7 +261,13 @@
             &:hover{
                 div{
                      background: #E6E6E6;
-                    color:#707070;
+                    color:#707070; 
+                }
+            }
+            &.active{
+                div{
+                    background: #00A1E0;
+                    color: white;
                 }
             }
         }

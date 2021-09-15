@@ -28,6 +28,7 @@ var vm=new Vue({
                 on:{
                     slideChangeTransitionStart:function(swiper){
                         vm.indexWorkData.worksBarTransform+=(swiper.activeIndex - swiper.previousIndex)*vm.indexWorkData.worksBarWidth;
+                        console.log(vm.indexWorkData.worksBarTransform);
                     },
                 }
             },

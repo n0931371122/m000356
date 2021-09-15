@@ -94,7 +94,7 @@
                                                     <span class="d-md-block">打造區域獨特的太陽能光電產業園區。</span>
                                                 </p>
                                                 <div class="d-block d-lg-none overflow-x-auto pb-2" data-aos="fade-up">
-                                                    <ul class="noneStyle d-flex les1">
+                                                    <ul class="noneStyle les1">
                                                         <li v-for="(item,index) in indexWorkData.categoryList" :class="[indexWorkData.selectedCategoryId==index?'active':'' , 'flex-shrink-0 mx-1']" :key="index" @click="indexWorkData.selectedCategoryId=index">
                                                             <div class="rounded-50 cursor">{{item.name}}</div>
                                                         </li>
@@ -627,26 +627,7 @@
                 title: "綠色能源成為社區助力，環境友善工法，永續在地深耕",
                 content: "地方活動 — 綠色能源成為社區助力 深耕在地 落實企業社會責任"
             },
-            {
-                categoryId: 1,
-                img: "styles/images/works/2.jpg",
-                alt: "圖片說明",
-                category: "專案介紹",
-                subCategory: "次分類2",
-                date: "2021.06.20",
-                title: "綠色能源成為社區助力，環境友善工法，永續在地深耕",
-                content: "地方活動 — 綠色能源成為社區助力 深耕在地 落實企業社會責任"
-            },
-            {
-                categoryId: 1,
-                img: "styles/images/works/3.jpg",
-                alt: "圖片說明",
-                category: "專案介紹",
-                subCategory: "次分類3",
-                date: "2021.06.20",
-                title: "綠色能源成為社區助力，環境友善工法，永續在地深耕",
-                content: "地方活動 — 綠色能源成為社區助力 深耕在地 落實企業社會責任"
-            },
+
         ]
         let categoryList = [{
                 id: 0,
@@ -658,7 +639,7 @@
             },
             {
                 id: 2,
-                name: "專案介紹"
+                name: "案場資訊"
             },
             {
                 id: 3,
