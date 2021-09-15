@@ -2036,6 +2036,10 @@ input[type=number] {
   flex: 0 0 216px;
 }
 
+main {
+  min-height: 300px;
+}
+
 html.menuOpen {
   overflow: hidden;
 }
