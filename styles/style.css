@@ -2850,6 +2850,9 @@ footer .footerConcept {
   border-radius: 0 15px 15px 0;
   z-index: -1;
 }
+.index-news-section .newsItems-box {
+  min-height: 884px;
+}
 .index-news-section .news-block {
   border-radius: 15px 0 0 15px;
 }
@@ -2857,11 +2860,17 @@ footer .footerConcept {
   .index-news-section {
     margin-top: 0px;
   }
+  .index-news-section .newsItems-box {
+    min-height: 780px;
+  }
   .index-news-section .dec {
     height: 950px;
   }
 }
 @media (max-width: 991px) {
+  .index-news-section .newsItems-box {
+    min-height: auto;
+  }
   .index-news-section .col-12 {
     background: #F5F5F5;
   }
