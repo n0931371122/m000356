@@ -444,16 +444,25 @@
         border-radius: 0 15px 15px 0;
         z-index: -1;
     }
+    .newsItems-box{
+        min-height: 884px;
+    }
     .news-block{
         border-radius:15px 0 0 15px;
     }
     @media(max-width:1199px){
         margin-top: 0px;
+        .newsItems-box{
+            min-height: 780px;
+        }
         .dec{
             height: 950px;
         }
     }
     @media(max-width:991px){ 
+        .newsItems-box{
+            min-height: auto;
+        }
         .col-12{
             background: #F5F5F5;
         }

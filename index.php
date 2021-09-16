@@ -86,7 +86,7 @@
                                 <h2 class="font-160 font-weight-bold text-EFEFEF text-center text-lg-left lh07 mb-0" data-aos="fade-up">Our Works</h2>
                                 <div class="works-box position-relative pl-4 pl-lg-5 pt-4 pt-md-5 pr-md-4 pr-lg-0">
                                     <div class="position-relative z-1 py-xl-3 pl-xxl-5 ml-xl-3 pt-1 pt-md-0 pt-lg-4 mt-3">
-                                        <div class="text-center text-md-left pr-lg-4">
+                                        <div class="text-center text-md-left pr-4">
                                             <h3 class="font-36 font-weight-bold les1 mb-2 mb-md-3 mb-lg-4" data-aos="fade-up">專案介紹</h3>
                                             <div class="d-block d-lg-flex flex-justify-space-between max1234">
                                                 <p class="font-20 lh18 pr-md-4 mb-4 mb-lg-0 pb-1 pb-md-0" data-aos="fade-up">
@@ -94,7 +94,7 @@
                                                     <span class="d-md-block">打造區域獨特的太陽能光電產業園區。</span>
                                                 </p>
                                                 <div class="d-block d-lg-none overflow-x-auto pb-2" data-aos="fade-up">
-                                                    <ul class="noneStyle les1">
+                                                    <ul class="noneStyle d-flex les1">
                                                         <li v-for="(item,index) in indexWorkData.categoryList" :class="[indexWorkData.selectedCategoryId==index?'active':'' , 'flex-shrink-0 mx-1']" :key="index" @click="indexWorkData.selectedCategoryId=index">
                                                             <div class="rounded-50 cursor">{{item.name}}</div>
                                                         </li>
@@ -437,7 +437,7 @@
                                     </div>
                                 </div>
                                 <div class="col pl-4 pr-4 pr-lg-3 pt-3 pt-md-0">
-                                    <div class="bg-white news-block pr-lg-4 pr-xl-5 pl-lg-4 pl-lg-5 py-lg-5">
+                                    <div class="newsItems-box bg-white news-block pr-lg-4 pr-xl-5 pl-lg-4 pl-lg-5 py-lg-5">
                                         <ul class="newsItems noneStyle pl-xxl-5 py-xl-3 ml-xl-3 mr-xl-4">
                                             <li class="newItem" data-aos="fade-up">
                                                 <h3 class="hidden">地方活動 — 綠色能源成為社區助力 深耕在地 落實企業社會責任</h3>
@@ -464,7 +464,7 @@
                                                     </span>
                                                 </a>
                                             </li>
-                                            <li class="newItem" data-aos="fade-up">
+                                            <!-- <li class="newItem" data-aos="fade-up">
                                                 <h3 class="hidden">產學合作，結合綠林保留區、滯洪池等保育空間，打造兼顧生態與綠能的太陽光電基地</h3>
                                                 <a class="d-flex position-relative py-4 my-1 my-md-0" href="new">
                                                     <span class="d-block py-xl-2 my-xl-1">
@@ -513,7 +513,7 @@
                                                         <img class="w20" src="styles/images/index/arrow.svg" alt="">
                                                     </span>
                                                 </a>
-                                            </li>
+                                            </li> -->
                                         </ul>
                                     </div>
                                 </div>
