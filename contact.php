@@ -102,15 +102,9 @@
                                                     <label class="d-block notoSansTC font-weight-500 les1 mb-2 pb-md-1" for="tel">聯絡電話 <span class="text-C24C4C ml-2">※</span></label>
                                                     <input class="bg-F0FAFE w-100 rounded-5 py-3 py-md-4 px-4" type="text" id="tel" name="tel" placeholder="03-36096688 或 0903-123456" required>
                                                 </div>
-                                                <div class="col-12 form-field position-relative z-1 mb-4" data-aos="fade-up">
-                                                    <label class="d-block notoSansTC font-weight-500 les1 mb-2 pb-md-1" for="issue">主旨<span class="text-C24C4C ml-2">※</span></label>
-                                                    <div class="select-element style-2">
-                                                        <select class="selectpicker firstHide" id="issue" name="issue">
-                                                            <option>請選擇主旨</option>
-                                                            <option>主旨1</option>
-                                                            <option>主旨2</option>
-                                                        </select>
-                                                    </div>
+                                                <div class="col-12 form-field mb-4" data-aos="fade-up">
+                                                    <label class="d-block font-weight-500 les1 mb-2 pb-md-1" for="issue">主旨</label>
+                                                    <input class="bg-F0FAFE w-100 rounded-5 py-3 py-md-4 px-4" type="text" id="issue" name="issue" placeholder="主旨">
                                                 </div>
                                                 <div class="col-12 form-field mb-4" data-aos="fade-up">
                                                     <label class="d-block notoSansTC font-weight-500 les1 mb-2 pb-md-1" for="content">訊息內容 <span class="text-C24C4C ml-2">※</span></label>
